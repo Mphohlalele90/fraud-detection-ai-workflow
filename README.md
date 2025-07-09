@@ -6,46 +6,79 @@ This repository contains the project work for the **AI Development Workflow** as
 
 ## Project Overview
 
-The project focuses on building a real-time fraud detection system for loan applications using machine learning. It demonstrates the full AI development lifecycle:
+This project demonstrates the end-to-end AI development workflow using two realistic case studies:
 
-- Problem definition  
-- Data collection and preprocessing  
-- Model development and evaluation  
-- Deployment considerations  
-- Ethical analysis  
+1. **Fraud Detection in Loan Applications**  
+   - Real-time classification of potentially fraudulent loan applications for banks.
+   - Covers data preprocessing, model training (Random Forest), evaluation, deployment planning, and ethical considerations.
+
+2. **Hospital Readmission Risk Prediction**  
+   - Predicts 30-day readmission risk for discharged patients at Chris Hani Baragwanath Hospital (Bara), South Africa.
+   - Focuses on data strategy, bias and privacy, modeling approaches, and deployment in a healthcare context.
+
+Both use cases emphasize the importance of ethical AI, bias mitigation, and practical deployment challenges.
 
 ---
 
 ## Repository Structure
-fraud-detection-ai-workflow/
-│
-├── data/ ← Mock datasets (CSV files)
-├── notebooks/ ← Google Colab notebooks (.ipynb)
-├── scripts/ ← Python modules (if any)
-├── diagrams/ ← Workflow diagrams and confusion matrices
-├── report/ ← Final PDF report and article drafts
-└── README.md ← This file
 
-## How to Use
+All project files are in the root directory:
 
-1. Open the notebook in Google Colab:  
-   [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://github.com/Mphohlalele90/fraud-detection-ai-workflow/blob/main/notebooks/fraud_detection_workflow.ipynb)  
+- `fraud_detection_workflow.ipynb` – Main notebook (contains both case studies, code, and analysis)
+- `AI Development Workflow Assignment.pdf` – Assignment brief
+- `README.md` – This file
 
-2. Upload the mock data CSV when prompted.
-
-3. Follow the notebook cells for step-by-step AI workflow implementation.
+> **Note:** There are no subfolders; mock data CSVs and images should be uploaded as prompted in the notebook.
 
 ---
 
-## Technologies
+## How to Use
 
-- Python  
-- Pandas  
-- Scikit-learn  
-- Google Colab  
+### Option 1: Google Colab (Recommended)
+
+1. Open the notebook in Google Colab:  
+   [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://github.com/Mphohlalele90/fraud-detection-ai-workflow/blob/main/fraud_detection_workflow.ipynb)
+2. Upload the required mock data CSV when prompted.
+3. Follow the notebook cells for a step-by-step AI workflow demonstration.
+
+### Option 2: Run Locally
+
+1. Clone this repository and ensure you have Python 3.x installed.
+2. Install dependencies:
+   ```bash
+   pip install pandas scikit-learn numpy ipython
+   ```
+3. Open the notebook with Jupyter or VSCode:
+   ```bash
+   jupyter notebook fraud_detection_workflow.ipynb
+   ```
+4. Upload the mock data CSV when prompted in the notebook.
+
+---
+
+## Technologies Used
+
+- Python 3
+- Pandas
+- NumPy
+- Scikit-learn
+- Google Colab / Jupyter Notebook
+
+---
+
+## Ethics & Bias Considerations
+
+- **Fraud Detection:** Addresses risks of unfairly flagging applicants from underrepresented locations. Strategies include using diverse datasets and fairness testing.
+- **Hospital Readmission:** Discusses patient privacy (POPIA compliance), bias from healthcare access disparities, and the need for fairness-aware modeling.
+
+---
+
+## AI Development Workflow Diagram
+
+The notebook includes a visual diagram of the AI workflow (CRISP-DM framework) and detailed markdown reflections on challenges, trade-offs, and improvements.
 
 ---
 
 ## Contact
 
-Created by Mpho Hlalele  
+Created by Mpho Hlalele
